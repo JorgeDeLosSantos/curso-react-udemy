@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM  from "react-dom";
-
-const saludo = <h1>Hola mundo</h1>;
+// import PrimeraApp from "./PrimeraApp";
+import CounterApp from './CounterApp';
+import './index.css';
 
 const divRoot = document.querySelector("#root");
 
-ReactDOM.render(saludo, divRoot);
-
+ReactDOM.render(<CounterApp value={10} />, divRoot);
